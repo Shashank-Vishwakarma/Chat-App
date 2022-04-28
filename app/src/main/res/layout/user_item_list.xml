@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/linearlayout_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cirecleimageview_recyclerview"
+            android:layout_width="50dp"
+            app:civ_border_width="2dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/username_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textAlignment="gravity"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
